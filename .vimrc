@@ -27,6 +27,11 @@ set title
 set cmdheight=2
 set laststatus=2
 set wildmenu
+set showcmd
+
+set smartcase
+set hlsearch
+set incsearch
 
 inoremap { {}<LEFT>
 inoremap ( ()<LEFT>
