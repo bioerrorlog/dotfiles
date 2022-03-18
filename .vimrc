@@ -16,7 +16,12 @@ set list
 set number
 set relativenumber
 
+set noswapfile
+
 autocmd BufWritePre * :%s/\s\+$//ge
 
-set noswapfile
+set title
+set cmdheight=2
+set laststatus=2
+set wildmenu
 
