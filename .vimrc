@@ -29,3 +29,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'rust-lang/rust.vim'
 call plug#end()
 
+" Rust
+let g:rustfmt_autosave = 1
+
