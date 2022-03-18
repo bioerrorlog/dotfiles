@@ -25,3 +25,7 @@ set cmdheight=2
 set laststatus=2
 set wildmenu
 
+call plug#begin('~/.vim/plugged')
+    Plug 'rust-lang/rust.vim'
+call plug#end()
+
