@@ -16,3 +16,7 @@ set list
 set number
 set relativenumber
 
+autocmd BufWritePre * :%s/\s\+$//ge
+
+set noswapfile
+
