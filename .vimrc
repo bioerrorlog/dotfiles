@@ -28,6 +28,9 @@ set cmdheight=2
 set laststatus=2
 set wildmenu
 
+inoremap { {}<LEFT>
+inoremap ( ()<LEFT>
+
 call plug#begin('~/.vim/plugged')
     Plug 'rust-lang/rust.vim'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
