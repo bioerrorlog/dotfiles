@@ -10,3 +10,9 @@ set softtabstop=4
 set autoindent
 set smartindent
 
+set listchars=tab:>.
+set list
+
+set number
+set relativenumber
+

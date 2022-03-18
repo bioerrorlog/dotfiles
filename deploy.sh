@@ -10,6 +10,6 @@ DOTFILES=(
 )
 
 for f in ${DOTFILES[@]}; do
-   ln -snfv ${PWD}/$f ~/$f
+    ln -snfv ${PWD}/$f ~/$f
 done
 
