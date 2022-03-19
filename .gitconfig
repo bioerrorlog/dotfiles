@@ -4,10 +4,10 @@
 
 [alias]
     graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
-    ad = add .
-    cm = commit -m
+    aa = add .
+    cc = commit -m
     ss = status
-    ps = push origin HEAD
+    pp = push origin HEAD
     cb = checkout -b
     lg = log --oneline
     review = diff origin/main...
