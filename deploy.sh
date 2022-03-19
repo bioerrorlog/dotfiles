@@ -7,6 +7,7 @@ cd $BASEDIR
 
 DOTFILES=(
     .vimrc
+    .gitconfig
 )
 
 for f in ${DOTFILES[@]}; do
