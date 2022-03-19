@@ -33,8 +33,8 @@ set smartcase
 set hlsearch
 set incsearch
 
-inoremap { {}<LEFT>
-inoremap ( ()<LEFT>
+"inoremap { {}<LEFT>
+"inoremap ( ()<LEFT>
 
 call plug#begin('~/.vim/plugged')
     Plug 'rust-lang/rust.vim'
