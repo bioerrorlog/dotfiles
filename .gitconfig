@@ -8,7 +8,6 @@
     cc = commit -m
     ss = status
     pp = push origin HEAD
-    cb = checkout -b
     lg = log --oneline
     review = diff origin/main...
     amend = commit --amend
