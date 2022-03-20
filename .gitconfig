@@ -9,6 +9,7 @@
     ss = status --short
     pp = push origin HEAD
     dd = diff .
+    dda = diff --staged
     lg = log --oneline
     review = diff origin/main...
     amend = commit --amend
