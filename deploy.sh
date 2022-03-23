@@ -7,8 +7,11 @@ cd $BASEDIR
 
 DOTFILES=(
     .vimrc
+    .vim/colors/hybrid.vim
     .gitconfig
 )
+
+mkdir -p ~/.vim/colors
 
 for f in ${DOTFILES[@]}; do
     ln -snfv ${PWD}/$f ~/$f

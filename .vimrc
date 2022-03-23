@@ -1,6 +1,9 @@
 filetype plugin indent on
 syntax on
 
+set background=dark
+colorscheme hybrid
+
 set encoding=utf-8
 set hidden
 
