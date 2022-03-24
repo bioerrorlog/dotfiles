@@ -6,7 +6,7 @@
     graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
     aa = add .
     cc = commit -m
-    ss = status --short
+    ss = status --short .
     pp = push origin HEAD
     dd = diff .
     dda = diff --staged
