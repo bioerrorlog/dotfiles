@@ -18,4 +18,3 @@ mkdir -p ~/.vim/autoload
 for f in ${DOTFILES[@]}; do
     ln -snfv ${PWD}/$f ~/$f
 done
-
