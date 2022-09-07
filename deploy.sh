@@ -6,11 +6,11 @@ BASEDIR=$(dirname $0)
 cd $BASEDIR
 
 DOTFILES=(
-    .vimrc
-    .vim/colors/hybrid.vim
-    .vim/autoload/plug.vim
-    .gitconfig
     .bashrc
+    .gitconfig
+    .vimrc
+    .vim/autoload/plug.vim
+    .vim/colors/hybrid.vim
 )
 
 mkdir -p ~/.vim/colors
