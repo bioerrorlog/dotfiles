@@ -7,6 +7,7 @@ cd $BASEDIR
 
 DOTFILES=(
     .bashrc
+    .bash_aliases
     .gitconfig
     .vimrc
     .vim/autoload/plug.vim
