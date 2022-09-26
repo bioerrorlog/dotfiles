@@ -7,4 +7,4 @@ alias ttp='terraform plan'
 alias tta='terraform apply'
 alias ttm='terraform fmt -recursive'
 
-alias tr='tree -L 3'
+alias trr='tree -L 3'
