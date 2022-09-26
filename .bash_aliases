@@ -8,3 +8,5 @@ alias tta='terraform apply'
 alias ttm='terraform fmt -recursive'
 
 alias trr='tree -L 3'
+
+alias mypath='echo $PATH | tr ":" "\n"'
