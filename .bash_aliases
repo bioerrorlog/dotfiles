@@ -4,6 +4,7 @@ alias l='ls -CF'
 
 alias tt='terraform'
 alias ttp='terraform plan'
+alias ttpp='tf_result_temp=$(mktemp); terraform plan | tee >(grep -E "#|Plan:" > ${tf_result_temp}) && cat ${tf_result_temp}'
 alias tta='terraform apply'
 alias ttm='terraform fmt -recursive'
 
