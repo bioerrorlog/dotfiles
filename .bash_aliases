@@ -1,6 +1,8 @@
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll='ls -alF --color=auto'
+alias la='ls -A --color=auto'
+alias l='ls -CF --color=auto'
+
+alias grep='grep --color=auto'
 
 alias tt='terraform'
 alias ttp='terraform plan'

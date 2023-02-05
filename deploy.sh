@@ -12,6 +12,7 @@ DOTFILES=(
     .vimrc
     .vim/autoload/plug.vim
     .vim/colors/hybrid.vim
+    .zshrc
 )
 
 mkdir -p ~/.vim/colors
