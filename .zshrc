@@ -12,7 +12,12 @@ eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
 # color
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
-autoload -U colors && colors
-PS1="%{$fg[green]%}%n@%m%{$reset_color%}:%{$fg[cyan]%}%1~%{$reset_color%} %% "
+function parse_git_branch() {
+    git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+}
+COLOR_DEF=$'%f'
+COLOR_USR=$'%F{green}'
+COLOR_DIR=$'%F{cyan}'
+COLOR_GIT=$'%F{magenta}'
+setopt PROMPT_SUBST
+export PROMPT='${COLOR_USR}%n ${COLOR_DIR}%~ ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} $ '
