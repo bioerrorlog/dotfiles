@@ -1,4 +1,8 @@
+# fix kubectl completion error
+autoload -Uz compinit
+compinit
 
+# set alias
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -21,3 +25,6 @@ COLOR_DIR=$'%F{cyan}'
 COLOR_GIT=$'%F{magenta}'
 setopt PROMPT_SUBST
 export PROMPT='${COLOR_USR}%n ${COLOR_DIR}%~ ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} $ '
+
+# kubectl completion
+source <(kubectl completion zsh)
