@@ -32,3 +32,14 @@ source <(kubectl completion zsh)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# cat repository for LLM prompts
+catr() {
+  (
+    tree
+    for f in "$@"; do
+      printf "\n── %s ──\n" "$f"
+      cat "$f"
+    done
+  ) | pbcopy
+}
